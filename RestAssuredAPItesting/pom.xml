@@ -13,20 +13,25 @@
 
     <plugins>
    
+    
         <plugin>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.1</version>
-            
-            <configuration>
-                <fork>true</fork>
-                <executable>C:\Program Files\Java\jdk1.8.0_111\bin\javac.exe</executable>
-                 <suiteXmlFiles>
- 				<!-- Need to pass testng.xml files as parameters from command line -->
-				<suiteXmlFile>Suits.xml</suiteXmlFile>
-				</suiteXmlFiles>
+            </plugin>
+            <plugin>
+  			 <groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-surefire-plugin</artifactId>
+    			<version>2.22.0</version>
+            		<configuration>
+              		  <fork>true</fork>
+                	<executable>C:\Program Files\Java\jdk1.8.0_111\bin\javac.exe</executable>
                 
-            </configuration>
-           
+         
+            		<suiteXmlFiles>
+ 				<!-- Need to pass testng.xml files as parameters from command line -->
+					<suiteXmlFile>Suits.xml</suiteXmlFile>
+					</suiteXmlFiles>
+                	</configuration>
         </plugin>
     </plugins>
 </build>

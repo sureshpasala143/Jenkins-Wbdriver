@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Test">
-
+<suite name="test">
 	
-	
-	<test name="Test03">
+	<test name="Firstcase_GET_Resquest">
 		<classes>
 			<class name="RestAssuredAPItesting.RestAssuredAPItesting.Firstcase_GET_Resquest" />
 	
